@@ -32,8 +32,21 @@
             var b =document.getElementById("b").value;
             var resultado
             
-                a = parseInt("a")
-                b = parseInt("b")
+            console.log("variable antes de parse", a);
+            console.log("variable antes de parse", b);
+            if(a== ""){
+                a=0;
+            }else{
+                a = parseInt(a);
+            }
+            if(b== ""){
+                b=0;
+            }else{
+                b = parseInt(b);
+            }
+                
+            console.log("variable antes de parse", a);
+            console.log("variable antes de parse", b);
 
             resultado=a+b;
 
