@@ -6,18 +6,21 @@
     <title>Solución de problemas</title>
 </head>
 <body>
+    <!--Esto es el planteamiento del problema-->
     <h1>Calculadora de dos variables</h1>
     <p>Con este formulario ayudara a resolver operaciones matemeticas basicas</p>
     <p>Escriba dos valores enteros</p>
     <p>Luego elija la operación que quiera realizar ya sea suma, resta, multiplicación o división</p>
     <p>Despues se le morstrara el resultado deseado</p><br>
 
+    <!--Aqui se le pide las variables a y b-->
     <label for="a">Ingrese el primer numero</label>
     <input type="number" id="a" name="a"><br>
 
     <label for="b">Ingrese el segundo numero</label>
     <input type="number" id="b" name="b">
     <p></p>
+    <!-- Aqui estan los botones de las operaciones-->
     <button onclick="sumar()">sumar</button>
     <button onclick="restar()">restar</button>
     <button onclick="multiplicar()">multiplicar</button>
@@ -25,7 +28,7 @@
     <p></p>
     <label for="resultado">Este es el resultado</label>
     <input type="number" id="resultado" name="resultado"><br>
-
+    <!-- Empieza el codigo en javascript-->
     <script>
         function sumar() {
             var a =document.getElementById("a").value;
@@ -80,4 +83,5 @@
             document.getElementById("resultado").value=resultado
         }
     </script>
+    <!--Finaliza el codigo de javascript-->
 </html>
