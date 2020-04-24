@@ -9,20 +9,62 @@
     <h1>Calculadora de dos variables</h1>
     <p>Con este formulario ayudara a resolver operaciones matemeticas basicas</p>
     <p>Escriba dos valores enteros</p>
-    <p>Luego elija la operación que quiera realizar ya sea suma, resta, multiplicación y división</p>
+    <p>Luego elija la operación que quiera realizar ya sea suma, resta, multiplicación o división</p>
     <p>Despues se le morstrara el resultado deseado</p><br>
 
     <label for="a">Ingrese el primer numero</label>
     <input type="number" id="a" name="a"><br>
 
     <label for="b">Ingrese el segundo numero</label>
-    <input type="number" id="b" name="b"><br>
-
-    <button> sumar </button>
-    <button> restar </button>
-    <button> multiplicar </button>
-    <button> dividir </button>
-
+    <input type="number" id="b" name="b">
+    <p></p>
+    <button onclick="sumar()">sumar</button>
+    <button onclick="restar()">restar</button>
+    <button onclick="multiplicar()">multiplicar</button>
+    <button onclick="dividir()">dividir</button>
+    <p></p>
     <label for="resultado">Este es el resultado</label>
-    <input type="number" id="resultado" name="resultado">
+    <input type="number" id="resultado" name="resultado"><br>
+
+    <script>
+        function sumar() {
+            var a =document.getElementById("a").value;
+            var b =document.getElementById("b").value;
+            var resultado
+            
+                a = parseInt("a")
+                b = parseInt("b")
+
+            resultado=a+b;
+
+            document.getElementById("resultado").value=resultado
+        }
+        function restar() {
+            var a =document.getElementById("a").value;
+            var b =document.getElementById("b").value;
+            var resultado
+
+            resultado=a-b;
+
+            document.getElementById("resultado").value=resultado
+        }
+        function multiplicar() {
+            var a =document.getElementById("a").value;
+            var b =document.getElementById("b").value;
+            var resultado
+
+            resultado=a*b;
+
+            document.getElementById("resultado").value=resultado
+        }
+        function dividir() {
+            var a =document.getElementById("a").value;
+            var b =document.getElementById("b").value;
+            var resultado
+
+            resultado=a/b;
+
+            document.getElementById("resultado").value=resultado
+        }
+    </script>
 </html>
